@@ -1,0 +1,33 @@
+@import '../../../../../styles/mixins.scss';
+
+.item {
+  width: 100%;
+  background-color: $c-white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 26px;
+  cursor: pointer;
+  transition: $transitionDefaultDuration all ease;
+
+  &_label {
+    font-weight: 400;
+    font-size: 15px;
+    color: $c-blue;
+  }
+
+  &.disabled {
+    background-color: $c-grey-200;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    background-color: $c-blue-active;
+
+    .item_label {
+      color: $c-white;
+    }
+  }
+}

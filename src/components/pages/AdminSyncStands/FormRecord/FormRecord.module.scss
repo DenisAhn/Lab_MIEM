@@ -1,0 +1,27 @@
+@import '../../../../styles/mixins.scss';
+
+.form {
+  margin-top: 25px;
+  width: 400px;
+
+  @include media-md {
+    width: 100%;
+  }
+}
+
+.input {
+  width: 100%;
+
+  &_label {
+    color: $c-blue;
+    padding-left: 5px;
+    font-size: 18px;
+  }
+}
+
+.btn {
+  margin-top: 13px;
+  height: 60px;
+  width: 100%;
+  background-color: $c-blue;
+}

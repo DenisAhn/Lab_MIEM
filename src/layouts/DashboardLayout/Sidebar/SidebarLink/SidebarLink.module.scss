@@ -1,0 +1,24 @@
+@import '../../../../styles/mixins.scss';
+
+.link {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  transition: $transitionDefaultDuration all ease;
+
+  img {
+    width: 30px;
+  }
+
+  &_name {
+    font-weight: 400;
+    font-size: 20px;
+    color: $c-white;
+    margin-left: 21px;
+  }
+
+  &.active {
+    background-color: $c-blue-active;
+  }
+}

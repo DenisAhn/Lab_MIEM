@@ -1,0 +1,17 @@
+@import '../../../styles/mixins.scss';
+
+.button {
+  background: $c-blue-active;
+  color: $c-white;
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 40px;
+  transition: $transitionDefaultDuration all ease;
+
+  &:active {
+    opacity: 0.7;
+  }
+}

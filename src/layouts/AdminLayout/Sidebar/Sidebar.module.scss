@@ -1,0 +1,40 @@
+@import '../../../styles/mixins.scss';
+
+.sidebar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 290px;
+  min-width: 290px;
+  overflow-y: auto;
+  background-color: $c-blue;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-self: flex-start;
+  height: 100%;
+
+  @include media-md {
+    display: none;
+  }
+
+  &.active {
+    @include media-md {
+      position: static;
+      max-width: 100%;
+      min-width: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &_text {
+    color: $c-white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    margin-top: 9px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: 'HSESans-Bold';
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../../styles/mixins.scss';
+
+.header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $c-blue;
+  padding: 0 31px;
+
+  @include media-xs {
+    padding: 0 15px;
+  }
+
+  &_logo {
+    img {
+      height: 52px;
+      width: 52px;
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: $c-white;
+    margin-left: 16px;
+
+    @include media-sm {
+      display: none;
+    }
+  }
+
+  &_name {
+    font-weight: 400;
+    font-size: 20px;
+    color: $c-white;
+    padding-right: 23px;
+    border-right: 1px solid $c-white;
+    height: 100%;
+    line-height: 55px;
+
+    @include media-xs {
+      font-size: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    height: 75%;
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+  }
+
+  &_session {
+    font-size: 20px;
+    color: $c-white;
+    padding-left: 23px;
+    text-align: right;
+
+    @include media-xs {
+      font-size: 15px;
+      padding-left: 15px;
+    }
+  }
+}

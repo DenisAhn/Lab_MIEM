@@ -1,0 +1,21 @@
+@import '../../../../styles/mixins.scss';
+
+.btns {
+  display: flex;
+  grid-gap: 21px;
+  align-items: center;
+
+  @include media-sm {
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  cursor: pointer;
+
+  &_label {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+}

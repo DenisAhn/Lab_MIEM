@@ -1,0 +1,13 @@
+@import '../../../styles/mixins.scss';
+
+.input {
+  background: $c-white;
+  border-radius: 20px;
+  color: $c-black;
+  padding: 15px 25px;
+  border: none;
+
+  &::placeholder {
+    color: $c-grey-100;
+  }
+}

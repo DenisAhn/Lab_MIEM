@@ -1,0 +1,109 @@
+@import '../../../../styles/mixins.scss';
+
+.item {
+  width: 100%;
+  background-color: $c-white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 26px;
+
+  @include media-lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  @include media-sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &_name {
+    font-size: 16px;
+    color: $c-blue;
+    font-family: 'HSESans-Bold';
+    border-right: 3px solid $c-blue;
+    width: 25%;
+    height: 100%;
+    line-height: 35px;
+
+    @include media-lg {
+      height: auto;
+      line-height: normal;
+      border-right: none;
+      width: auto;
+    }
+  }
+
+  &_code {
+    font-size: 16px;
+    color: $c-blue;
+    font-family: 'HSESans-Bold';
+    
+    width: 25%;
+    text-align: center;
+    height: 100%;
+    line-height: 25px;
+
+    @include media-lg {
+      height: auto;
+      line-height: normal;
+      border-right: none;
+      width: auto;
+    }
+
+    @include media-sm {
+      text-align: left;
+    }
+
+    span {
+      font-family: 'HSESans-Regular';
+      color: $c-black;
+    }
+  }
+
+  &_date {
+    font-size: 16px;
+    font-family: 'HSESans-Regular';
+    text-align: center;
+    border-right: 3px solid $c-blue;
+    width: 25%;
+    height: 100%;
+    line-height: 35px;
+    border-left: 3px solid $c-blue;
+
+    @include media-lg {
+      text-align: left;
+      height: auto;
+      line-height: normal;
+      border-right: none;
+      width: auto;
+      border-left: none;
+    }
+  }
+
+  &_btn {
+    cursor: pointer;
+    text-align: right;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include media-lg {
+      text-align: center;
+      height: auto;
+      border-right: none;
+      width: auto;
+      justify-content: center;
+    }
+
+    @include media-sm {
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+}

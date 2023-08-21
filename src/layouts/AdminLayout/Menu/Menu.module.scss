@@ -1,0 +1,65 @@
+@import '../../../styles/mixins.scss';
+
+.burger {
+  cursor: pointer;
+  background: none;
+  display: none;
+  width: 30px;
+  height: 42px;
+  position: relative;
+  z-index: 9999;
+
+  @include media-md {
+    display: block;
+  }
+
+  &.active {
+    i {
+      background-color: transparent;
+
+      &:before {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      &:after {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  i {
+    display: block;
+    background-color: $c-black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: $transitionDefaultDuration;
+
+    &:before {
+      content: '';
+      display: block;
+      background-color: $c-black;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: $transitionDefaultDuration;
+      top: -7px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      background-color: $c-black;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: $transitionDefaultDuration;
+      bottom: -7px;
+    }
+  }
+}

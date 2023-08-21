@@ -1,0 +1,131 @@
+@import '../../../styles/mixins.scss';
+
+.title {
+  font-size: 50px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $c-blue;
+  padding: 20px 0;
+  background-color: $c-white;
+  font-family: 'HSESans-Bold';
+
+  @include media-sm {
+    font-size: 30px;
+    line-height: 41px;
+  }
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+
+  @include media-sm {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  &_text {
+    font-size: 30px;
+    line-height: 41px;
+    color: $c-blue;
+    background-color: $c-grey-100;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      font-family: 'HSESans-Bold';
+    }
+
+    @include media-sm {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  img {
+    width: 40%;
+
+    @include media-sm {
+      width: 100%;
+    }
+  }
+}
+
+.link {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 81px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+  color: $c-blue-active;
+  font-family: 'HSESans-Bold';
+  justify-content: center;
+  padding-bottom: 20px;
+
+  @include media-sm {
+    font-size: 30px;
+    line-height: 41px;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin-left: 60px;
+
+  @include media-sm {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  &_col {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media-sm {
+      width: 100%;
+    }
+  }
+
+  &_text {
+    font-size: 25px;
+    line-height: 31px;
+    color: $c-blue;
+    background-color: $c-grey-100;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'HSESans-SemiBold';
+
+    a {
+      color: $c-blue;
+      text-decoration: underline;
+    }
+
+    @include media-sm {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  img {
+    height: 500px;
+
+    @include media-sm {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

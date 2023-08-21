@@ -1,0 +1,17 @@
+@import '../../../styles/mixins.scss';
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+  margin-bottom: 27px;
+}
+
+.empty {
+  font-size: 20px;
+  margin-bottom: 27px;
+  margin-top: 14px;
+}

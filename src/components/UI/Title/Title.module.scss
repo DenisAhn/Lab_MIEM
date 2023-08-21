@@ -1,0 +1,9 @@
+@import '../../../styles/mixins.scss';
+
+.title {
+  font-size: 30px;
+  color: $c-blue;
+  border-bottom: 4px solid $c-blue;
+  padding-bottom: 5px;
+  font-family: 'HSESans-Bold';
+}

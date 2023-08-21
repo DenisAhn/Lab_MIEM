@@ -1,0 +1,34 @@
+@import '../../../../styles/mixins.scss';
+
+.title {
+  margin-bottom: 27px;
+  color: $c-white;
+  font-size: 30px;
+  font-family: 'HSESans-Bold';
+}
+
+.text {
+  color: $c-white;
+  line-height: 22px;
+  margin-top: 16px;
+}
+
+.form {
+  display: flex;
+}
+
+.btn {
+  background: $c-white;
+  border-radius: 20px;
+  padding: 0 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 21px;
+  display: flex;
+  align-items: center;
+  height: 52px;
+}
+
+.input {
+  width: 100%;
+}

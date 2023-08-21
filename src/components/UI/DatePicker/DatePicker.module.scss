@@ -1,0 +1,11 @@
+@import '../../../styles/mixins.scss';
+
+.datepicker {
+  &_label {
+    font-size: 28px;
+    color: $c-blue;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    font-family: 'HSESans-SemiBold';
+  }
+}

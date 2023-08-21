@@ -1,0 +1,49 @@
+@import '../../../../styles/mixins.scss';
+
+.wrapper {
+  margin-top: 31px;
+  margin-bottom: 36px;
+}
+
+.title {
+  font-size: 20px;
+  color: $c-white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 20px 20px 0 0;
+  background-color: $c-blue-active;
+  font-family: 'HSESans-Bold';
+}
+
+.btns {
+  background-color: $c-grey-200;
+  border-radius: 0 0 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  padding: 15px 0;
+}
+
+.btn {
+  text-align: center;
+  color: $c-white;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:last-child {
+    border-left: 1px solid $c-white;
+  }
+}
+
+.items {
+  padding: 0 23px;
+  height: 300px;
+  background-color: $c-white;
+  overflow: auto;
+}
+
+.item {
+  font-size: 18px;
+  border-bottom: 1px solid $c-grey-200;
+  padding: 15px 0;
+}

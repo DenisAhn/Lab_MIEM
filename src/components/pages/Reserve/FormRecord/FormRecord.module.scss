@@ -1,0 +1,71 @@
+@import '../../../../styles/mixins.scss';
+
+.form {
+  margin-top: 25px;
+  width: 765px;
+
+  @include media-md {
+    width: 100%;
+  }
+}
+
+.input {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $c-blue;
+
+  & > div:last-child {
+    width: 287px;
+  }
+}
+
+.label {
+  font-size: 23px;
+  color: $c-blue;
+  margin-left: 20px;
+  margin-bottom: 7px;
+  font-family: 'HSESans-SemiBold';
+}
+
+.times {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  width: 100% !important;
+
+  @include media-md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.btn {
+  margin-top: 13px;
+  height: 67px;
+  width: 100%;
+  background-color: $c-blue;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  @include media-xl {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.info {
+  font-size: 15px;
+  color: $c-blue-active;
+  line-height: 27px;
+  margin-left: 37px;
+
+  @include media-xl {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
